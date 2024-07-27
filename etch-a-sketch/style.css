@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Pixelify Sans", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: rgb(255, 226, 172);
+	color: rgb(68, 44, 0);
+	padding: 10px 20px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+button:hover {
+	background-color: rgb(68, 44, 0);
+	color: rgb(255, 226, 172);
+}
+
+h1 {
+	font-size: 4rem;
+	margin: 10px 0;
+}
+
+.size-input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	font-size: 1.5rem;
+	text-align: center;
+	gap: 10px;
+	margin: 20px 0;
+}
+
+#size {
+	border: 1px solid rgb(112, 112, 112);
+	font-size: 15px;
+	padding: 2px 5px;
+}
+
+.container {
+	width: 600px;
+	height: 600px;
+	background-color: rgb(255, 226, 172);
+	display: flex;
+	flex-wrap: wrap;
+}
