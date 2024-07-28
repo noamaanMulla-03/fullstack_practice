@@ -100,15 +100,29 @@ body {
 	align-items: center;
 	font-size: 1.5rem;
 	cursor: pointer;
+	transition: background-color 0.25s;
+}
+
+.button:hover {
+	background-color: #d6d6d6;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .top-row {
 	background-color: #d6d6d6;
 }
 
+.top-row:hover {
+	background-color: #c6c6c6;
+}
+
 .right-column {
 	background-color: #f89146;
 	color: #ffffff;
+}
+
+.right-column:hover {
+	background-color: #f37b0d;
 }
 
 #zero {

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<script src="calculator.js"></script>
+		<script src="script.js" defer></script>
 		<title>Calculator</title>
 	</head>
 	<body>
@@ -18,23 +18,23 @@
 				<div class="display" id="display">0</div>
 			</div>
 			<div class="button-container">
-				<button class="button top-row">AC</button>
-				<button class="button top-row">+/-</button>
-				<button class="button top-row">%</button>
-				<button class="button right-column">/</button>
-				<button class="button">7</button>
-				<button class="button">8</button>
-				<button class="button">9</button>
-				<button class="button right-column">*</button>
-				<button class="button">4</button>
-				<button class="button">5</button>
-				<button class="button">6</button>
-				<button class="button right-column">-</button>
-				<button class="button">1</button>
-				<button class="button">2</button>
-				<button class="button">3</button>
-				<button class="button right-column">+</button>
-				<button class="button" id="zero">0</button>
+				<button class="button top-row" id="clearDisplay">AC</button>
+				<button class="button top-row" id="toggleNegative">+/-</button>
+				<button class="button operator top-row">%</button>
+				<button class="button operator right-column">/</button>
+				<button class="button operand">7</button>
+				<button class="button operand">8</button>
+				<button class="button operand">9</button>
+				<button class="button operator right-column">*</button>
+				<button class="button operand">4</button>
+				<button class="button operand">5</button>
+				<button class="button operand">6</button>
+				<button class="button operator right-column">-</button>
+				<button class="button operand">1</button>
+				<button class="button operand">2</button>
+				<button class="button operand">3</button>
+				<button class="button operator right-column">+</button>
+				<button class="button operand" id="zero">0</button>
 				<button class="button">.</button>
 				<button class="button right-column" id="equals">=</button>
 			</div>
