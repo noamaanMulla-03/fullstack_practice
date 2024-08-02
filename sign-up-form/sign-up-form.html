@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script src="./script.js" defer></script>
+		<title>Sign Up Form</title>
+	</head>
+	<body>
+		<aside class="side-img">
+			<div class="side-img-heading">
+				<img
+					src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+					alt=""
+					srcset=""
+				/>
+				<h1>ODIN</h1>
+			</div>
+			<div class="side-img-caption">
+				<p>
+					Photo by <a href="#">Halie West</a> on
+					<a href="#">Unsplash</a>
+				</p>
+			</div>
+		</aside>
+		<main>
+			<article>
+				<div>
+					<p>
+						This is not a real online service! You know you need
+						something in your life to help you realize your deepest
+						dreams.
+					</p>
+					<p>Sign up <em>now</em> to get started</p>
+				</div>
+				<div>
+					<p>You <em>know</em> you want to.</p>
+				</div>
+			</article>
+			<form id="registration-form" action="/" method="POST">
+				<div>
+					<h1>Let's do this!</h1>
+					<fieldset class="form-group">
+						<div>
+							<label for="fname">FISRT NAME</label>
+							<input
+								type="text"
+								name="fname"
+								id="fname"
+								autocomplete="off"
+								requioup
+							/>
+						</div>
+						<div>
+							<label for="lname">LAST NAME</label>
+							<input
+								type="text"
+								name="lname"
+								id="lname"
+								autocomplete="off"
+								required
+							/>
+						</div>
+					</fieldset>
+					<fieldset class="form-group">
+						<div>
+							<label for="email">EMAIL</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								autocomplete="off"
+								required
+							/>
+						</div>
+						<div>
+							<label for="pnumber">PHONE NUMBER</label>
+							<input
+								type="text"
+								name="pnumber"
+								id="pnumber"
+								autocomplete="off"
+								required
+							/>
+						</div>
+					</fieldset>
+					<fieldset class="form-group">
+						<div>
+							<label for="password">PASSWORD</label>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								class="password-erro"
+								autocomplete="off"
+								required
+							/>
+							<p id="password-error">* Passwords do not match</p>
+						</div>
+						<div>
+							<label for="confirm-password"
+								>CONFIRM PASSWORD</label
+							>
+							<input
+								type="password"
+								name="confirm-password"
+								id="confirm-password"
+								class="password-erro"
+								autocomplete="off"
+								required
+							/>
+						</div>
+					</fieldset>
+				</div>
+				<article>
+					<button
+						type="button"
+						id="submit-button"
+						form="registration-form"
+					>
+						Create Account
+					</button>
+					<p>Already have an account? <a href="#">Log in</a></p>
+				</article>
+			</form>
+		</main>
+	</body>
+</html>
